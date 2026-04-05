@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ADMIN DASHBOARD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='admin.css'>
+    <script src='main.js'></script>
+</head>
+<body onload="showallusers()">
+
+    <div class="container">
+        <div class="header">
+            <h1>ADMIN DASHBOARD</h1>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <div class="glass-card">
+            <div class="search-box">
+                <input type="search" id="searchEmail" placeholder="Search By Email............."/>
+                <button onclick="searchUser()">Search</button>
+            </div>
+
+            <table id="userTable">
+                <tr>
+                    <th>NAME</th>
+                    <th>PHONE</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+             </table>
+        </div>
+
+    </div>
+    
+</body>
+</html>

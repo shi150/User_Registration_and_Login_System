@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FULL PROJECT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="outer-card" id="container">
+
+    <!-- Sign Up Card -->
+    <div class="inner-card signup-card">
+        <form onsubmit="return register()">
+            <h1>Create Account</h1>
+            <input type="text" id="sname" placeholder="Name"/>
+            <input type="text" id="sphone" placeholder="Phone Number"/>
+            <input type="email" id="semail" placeholder="Email"/>
+            <input type="password" id="spassword" placeholder="Password"/>
+            <input type="password" id="sconfirmpassword" placeholder="Confirm Password"/>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Sign In Card -->
+    <div class="inner-card signin-card">
+        <form onsubmit="return login()">
+            <h1>Sign In</h1>
+            <input type="email" id="lemail" placeholder="Email">
+            <input type="password" id="lpassword" placeholder="Password">
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <!-- Animation Effects -->
+    <div class="effects">
+        <div class="anim-effects">
+
+            <div class="direction left-card">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="anima-button" id="signIn" type="button">Sign In</button>
+            </div>
+
+            <div class="direction right-card">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="anima-button" id="signUp" type="button">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
